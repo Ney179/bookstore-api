@@ -15,8 +15,9 @@ public class TestConfig {
 	DBService dbService;
 	
 	@Bean
-	public void instanciaBaseDados() {
+	public Boolean instanciaBaseDados() {
 		this.dbService.instanciaBaseDados();
+		return true;
 	}
 
 }
